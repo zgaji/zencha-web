@@ -1,0 +1,377 @@
+/* Contact Page Styles */
+.contact {
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+/* Page Header */
+.contact-header {
+  background: linear-gradient(135deg, var(--soft-green) 0%, #f0f8f0 100%);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Content */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 5rem 0;
+}
+
+/* Contact Information */
+.contact-info h2 {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.info-cards {
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.info-content h3 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.info-content p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.info-content span {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 2rem;
+}
+
+.map-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.map-placeholder {
+  background: linear-gradient(135deg, var(--soft-green), #f0f8f0);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  text-align: center;
+  color: var(--primary-green);
+}
+
+.map-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.map-placeholder p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--primary-green);
+}
+
+.map-address {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Contact Form */
+.contact-form-section h2 {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: var(--light-green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.faq-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header {
+    padding: 4rem 0 3rem;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  
+  .contact-info h2,
+  .contact-form-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .info-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .info-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .info-content p {
+    font-size: 1rem;
+  }
+  
+  .map-placeholder {
+    padding: 2rem;
+  }
+  
+  .map-icon {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form {
+    padding: 2rem;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .faq-item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 3rem 0 2rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+  }
+  
+  .contact-content {
+    padding: 2rem 0;
+  }
+  
+  .contact-info h2,
+  .contact-form-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .info-card {
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .map-placeholder {
+    padding: 1.5rem;
+  }
+  
+  .map-icon {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+  
+  .submit-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .faq-item {
+    padding: 1.25rem;
+  }
+}

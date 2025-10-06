@@ -1,0 +1,429 @@
+/* Promotions Page Styles */
+.promotions {
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+/* Page Header */
+.promotions-header {
+  background: linear-gradient(135deg, var(--soft-green) 0%, #f0f8f0 100%);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Current Promotions */
+.current-promotions {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.promotion-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.promotion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-green);
+}
+
+.promo-header {
+  background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.promo-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.promo-discount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.promo-content {
+  padding: 2rem;
+}
+
+.promo-title {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.promo-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.promo-code {
+  background-color: var(--soft-green);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.code-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-right: 0.5rem;
+}
+
+.code-value {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: var(--primary-green);
+  font-size: 1.1rem;
+}
+
+.promo-valid {
+  font-size: 0.85rem;
+  color: var(--medium-gray);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Loyalty Program */
+.loyalty-program {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loyalty-timeline {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.loyalty-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.loyalty-step:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.step-number {
+  background-color: var(--primary-green);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-visit {
+  font-size: 1.1rem;
+  color: var(--medium-gray);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.step-reward {
+  font-size: 1.3rem;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.loyalty-signup {
+  text-align: center;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.loyalty-signup h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.loyalty-signup p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.signup-button {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.signup-button:hover {
+  background-color: var(--light-green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Special Events */
+.special-events {
+  padding: 5rem 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.event-card {
+  background-color: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-top: 4px solid var(--primary-green);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.event-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.event-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.event-time {
+  background-color: var(--soft-green);
+  color: var(--primary-green);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Terms Section */
+.terms-section {
+  padding: 3rem 0;
+  background-color: var(--light-gray);
+}
+
+.terms-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.terms-list {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.terms-list li {
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .promotions-header {
+    padding: 4rem 0 3rem;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .promotions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .loyalty-step {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .loyalty-signup {
+    padding: 2rem;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .event-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .terms-list {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .promotions-header {
+    padding: 3rem 0 2rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+  }
+  
+  .promo-content {
+    padding: 1.5rem;
+  }
+  
+  .promo-title {
+    font-size: 1.1rem;
+  }
+  
+  .promo-discount {
+    font-size: 1.5rem;
+  }
+  
+  .loyalty-step {
+    padding: 1.25rem;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .loyalty-signup {
+    padding: 1.5rem;
+  }
+  
+  .event-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .event-icon {
+    font-size: 2.5rem;
+  }
+  
+  .terms-list {
+    padding: 1rem;
+  }
+}
