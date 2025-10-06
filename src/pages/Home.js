@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
-import './Home.css';
+import '../styles/Home.css';
 
 const Home = () => {
   const featuredDrinks = [

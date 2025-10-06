@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
-import './Products.css';
+import '../styles/Products.css';
 
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState('all');

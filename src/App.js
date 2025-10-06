@@ -7,7 +7,7 @@ import About from './pages/About';
 import Products from './pages/Products';
 import Promotions from './pages/Promotions';
 import Contact from './pages/Contact';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
