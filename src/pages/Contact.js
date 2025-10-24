@@ -41,7 +41,7 @@ const Contact = () => {
             <h2>Get in Touch</h2>
             <div className="info-cards">
               <div className="info-card">
-                <div className="info-icon">📧</div>
+                <div className="info-icon">Email</div>
                 <div className="info-content">
                   <h3>Email</h3>
                   <p>zencha@gmail.com</p>
@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
               
               <div className="info-card">
-                <div className="info-icon">📍</div>
+                <div className="info-icon">Location</div>
                 <div className="info-content">
                   <h3>Location</h3>
                   <p>Manila, Philippines</p>
@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
               
               <div className="info-card">
-                <div className="info-icon">🕒</div>
+                <div className="info-icon">Hours</div>
                 <div className="info-content">
                   <h3>Hours</h3>
                   <p>Mon - Sun: 7:00 AM - 9:00 PM</p>
@@ -72,7 +72,7 @@ const Contact = () => {
             <div className="map-section">
               <h3>Find Us</h3>
               <div className="map-placeholder">
-                <span className="map-icon">🗺️</span>
+                <span className="map-icon">Map</span>
                 <p>Interactive map would be here</p>
                 <span className="map-address">Manila, Philippines</span>
               </div>
