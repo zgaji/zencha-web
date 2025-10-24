@@ -14,8 +14,8 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -29,18 +29,22 @@
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.footer-brand-line {
+  font-size: 1rem;
+  color: #c8e6c8;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .footer-tagline {
   font-size: 1.1rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: #a8d5a8;
-}
-
-.footer-description {
-  color: #c8e6c8;
-  line-height: 1.6;
 }
 
 .footer-heading {
@@ -49,26 +53,58 @@
   color: #a8d5a8;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.footer-links li {
-  margin-bottom: 0.5rem;
+.quick-links a {
+  color: #c8e6c8;
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
-.footer-links a {
+.quick-links a:hover {
+  color: var(--white);
+}
+
+.separator {
+  color: #a8d5a8;
+  font-size: 0.9rem;
+  margin: 0 0.25rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: #c8e6c8;
   text-decoration: none;
   transition: var(--transition);
   font-size: 0.95rem;
 }
 
-.footer-links a:hover {
+.social-link:hover {
   color: var(--white);
-  padding-left: 5px;
+  transform: translateX(5px);
+}
+
+.social-icon {
+  font-size: 1.1rem;
+}
+
+.social-text {
+  font-weight: 500;
 }
 
 .contact-info p {
@@ -105,15 +141,17 @@
     margin-bottom: 1rem;
   }
   
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
+  .quick-links {
     justify-content: center;
-    gap: 1rem;
+    flex-wrap: wrap;
   }
   
-  .footer-links li {
-    margin-bottom: 0;
+  .social-links {
+    align-items: center;
+  }
+  
+  .social-link {
+    justify-content: center;
   }
 }
 
@@ -126,12 +164,24 @@
     font-size: 1.5rem;
   }
   
+  .footer-brand-line {
+    font-size: 0.9rem;
+  }
+  
   .footer-tagline {
     font-size: 1rem;
   }
   
-  .footer-links {
+  .quick-links {
     flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .social-links {
     gap: 0.5rem;
   }
 }
