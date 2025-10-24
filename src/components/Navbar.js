@@ -18,7 +18,7 @@ const Navbar = () => {
         
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Home
+            Homepage
           </Link>
           <Link to="/about" className="nav-link" onClick={() => setIsMenuOpen(false)}>
             About Us
@@ -30,7 +30,10 @@ const Navbar = () => {
             Promotions
           </Link>
           <Link to="/contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Contact
+            Contact Us
+          </Link>
+          <Link to="/contact" className="nav-cta-button" onClick={() => setIsMenuOpen(false)}>
+            Find a Stall
           </Link>
         </div>
         
