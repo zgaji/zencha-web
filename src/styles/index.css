@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: var(--fern-green);
-  background-color: var(--parchment);
+  background-color: var(--white);
 }
 
 /* CSS Variables for consistent theming */

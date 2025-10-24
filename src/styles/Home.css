@@ -1,7 +1,7 @@
 /* Home Page Styles */
 .home {
   min-height: 100vh;
-  background-color: var(--parchment);
+  background-color: var(--white);
 }
 
 /* Promotional Banner */
@@ -20,7 +20,7 @@
 
 /* Hero Section */
 .hero {
-  background-color: var(--parchment);
+  background-color: var(--white);
   padding: 4rem 0 6rem;
   display: flex;
   flex-direction: column;
