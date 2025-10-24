@@ -100,7 +100,9 @@
 }
 
 .social-icon {
-  font-size: 1.1rem;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .social-text {
@@ -111,6 +113,14 @@
   color: #c8e6c8;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-icon {
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .footer-bottom {
