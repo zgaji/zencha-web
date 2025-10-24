@@ -14,9 +14,10 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  gap: 2.5rem;
   margin-bottom: 2rem;
+  align-items: start;
 }
 
 .footer-section h3,
@@ -109,18 +110,36 @@
   font-weight: 500;
 }
 
-.contact-info p {
-  color: #c8e6c8;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  color: #c8e6c8;
+  font-size: 0.95rem;
+}
+
+.contact-item a {
+  color: #c8e6c8;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-item a:hover {
+  color: var(--white);
 }
 
 .contact-icon {
-  font-size: 1rem;
-  opacity: 0.8;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  opacity: 0.9;
+  flex-shrink: 0;
 }
 
 .footer-bottom {
@@ -161,6 +180,14 @@
   }
   
   .social-link {
+    justify-content: center;
+  }
+  
+  .contact-info {
+    align-items: center;
+  }
+  
+  .contact-item {
     justify-content: center;
   }
 }
