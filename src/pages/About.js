@@ -17,17 +17,20 @@ const About = () => {
             <div className="story-text">
               <h2>Our Story</h2>
               <p>
-                Zencha was born from a simple belief: matcha is always a good drink. 
-                What started as a passion for the earthy, complex flavors of authentic 
-                matcha has grown into a mission to share this incredible experience 
-                with everyone.
+                At Zencha, we believe in slowing down. Our journey started with a shared 
+                love for the earthy, smooth taste of matcha — a drink that's both 
+                energizing and grounding. Founded in Manila, Zencha celebrates the art 
+                of whisking as more than just a café ritual; it's a lifestyle.
               </p>
               <p>
-                We believe that quality matcha shouldn't be a luxury reserved for 
-                special occasions. Our journey began when we discovered the profound 
-                difference between authentic ceremonial grade matcha and the powdered 
-                green tea often passed off as matcha in many places.
+                We take pride in using authentic matcha sourced from trusted farms, 
+                ensuring every sip is full of flavor and nutrients. Through our slow bar 
+                experience and take-home matcha tins, we aim to make matcha accessible, 
+                affordable, and mindful for everyone.
               </p>
+              <div className="tagline-section">
+                <p className="tagline">"From the whisk to your cup — pure matcha moments"</p>
+              </div>
             </div>
             <div className="story-image">
               <div className="image-placeholder">

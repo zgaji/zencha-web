@@ -51,6 +51,23 @@
   margin-bottom: 1.5rem;
 }
 
+.tagline-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--soft-green);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-green);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
 .story-image {
   display: flex;
   justify-content: center;
@@ -238,6 +255,14 @@
     font-size: 1rem;
   }
   
+  .tagline {
+    font-size: 1.1rem;
+  }
+  
+  .tagline-section {
+    padding: 1.25rem;
+  }
+  
   .image-placeholder {
     padding: 2rem;
     max-width: 300px;
@@ -292,6 +317,14 @@
   
   .placeholder-icon {
     font-size: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .tagline-section {
+    padding: 1rem;
   }
   
   .benefits-section h2,
