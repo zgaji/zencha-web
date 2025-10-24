@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section brand-section">
-            <h3 className="footer-title">ZENCHA</h3>
+            <h3 className="footer-title">zencha</h3>
             <p className="footer-brand-line">Your local matcha slow bar — handcrafted drinks and premium powders.</p>
             <p className="footer-tagline">Matcha? yes, please!</p>
           </div>

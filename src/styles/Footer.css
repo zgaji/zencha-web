@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-  background-color: var(--fern-green);
+  background-color: var(--primary-green);
   color: var(--white);
   padding: 3rem 0 1rem;
   margin-top: 4rem;
@@ -35,7 +35,7 @@
 
 .footer-brand-line {
   font-size: 1rem;
-  color: var(--parchment);
+  color: var(--text-parchment);
   margin-bottom: 0.75rem;
   line-height: 1.4;
   font-weight: 400;
@@ -45,13 +45,13 @@
   font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 0;
-  color: var(--pistachio);
+  color: var(--text-muted);
 }
 
 .footer-heading {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: var(--pistachio);
+  color: var(--text-muted);
 }
 
 .quick-links {
@@ -62,7 +62,7 @@
 }
 
 .quick-links a {
-  color: var(--parchment);
+  color: var(--text-parchment);
   text-decoration: none;
   transition: var(--transition);
   font-size: 0.95rem;
@@ -74,7 +74,7 @@
 }
 
 .separator {
-  color: var(--pistachio);
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin: 0 0.25rem;
 }
@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--parchment);
+  color: var(--text-parchment);
   text-decoration: none;
   transition: var(--transition);
   font-size: 0.95rem;
@@ -120,12 +120,12 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--parchment);
+  color: var(--text-parchment);
   font-size: 0.95rem;
 }
 
 .contact-item a {
-  color: var(--parchment);
+  color: var(--text-parchment);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -143,13 +143,13 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--pistachio);
+  border-top: 1px solid var(--border-light);
   padding-top: 1.5rem;
   text-align: center;
 }
 
 .footer-bottom p {
-  color: var(--pistachio);
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin: 0;
 }
