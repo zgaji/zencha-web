@@ -140,47 +140,41 @@
 
 .hero-decoration {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   z-index: 1;
-  pointer-events: none;
+  opacity: 0.6;
 }
 
 .green-circle {
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(168, 216, 141, 0.15) 0%, rgba(155, 203, 122, 0.08) 40%, transparent 70%);
+  background: radial-gradient(circle, var(--matcha-green) 0%, rgba(168, 216, 141, 0.4) 50%, rgba(155, 203, 122, 0.2) 70%, transparent 100%);
   border-radius: 50%;
   position: absolute;
-  top: -250px;
-  right: -250px;
-  animation: gentleFloat 8s ease-in-out infinite;
+  bottom: -200px;
+  right: -200px;
+  animation: float 6s ease-in-out infinite;
 }
 
-@keyframes gentleFloat {
-  0%, 100% { 
-    transform: translateY(0px) scale(1); 
-    opacity: 0.6;
-  }
-  50% { 
-    transform: translateY(-15px) scale(1.02); 
-    opacity: 0.8;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
 }
 
 .hero-decoration::before {
   content: '';
   position: absolute;
-  top: -200px;
-  right: -200px;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(155, 203, 122, 0.12) 0%, rgba(168, 216, 141, 0.06) 50%, transparent 80%);
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--pistachio) 0%, rgba(155, 203, 122, 0.3) 70%, transparent 100%);
   border-radius: 50%;
-  animation: gentleFloat 6s ease-in-out infinite reverse;
-  animation-delay: -2s;
+  transform: translate(-50%, -50%);
+  animation: float 4s ease-in-out infinite reverse;
 }
 
 /* Featured Section */
@@ -353,20 +347,13 @@
   }
   
   .hero-decoration {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
   }
   
   .green-circle {
-    top: -175px;
-    right: -175px;
-  }
-  
-  .hero-decoration::before {
-    top: -140px;
-    right: -140px;
-    width: 250px;
-    height: 250px;
+    bottom: -100px;
+    right: -100px;
   }
   
   .promo-text {
@@ -410,20 +397,13 @@
   }
   
   .hero-decoration {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
   }
   
   .green-circle {
-    top: -150px;
-    right: -150px;
-  }
-  
-  .hero-decoration::before {
-    top: -120px;
-    right: -120px;
-    width: 200px;
-    height: 200px;
+    bottom: -75px;
+    right: -75px;
   }
   
   .promo-text {
