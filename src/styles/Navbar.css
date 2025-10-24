@@ -82,8 +82,8 @@
 }
 
 .nav-cta-button {
-  background-color: #A8D88D;
-  color: var(--text-dark);
+  background-color: var(--pistachio);
+  color: var(--fern-green);
   padding: 0.5rem 1.5rem;
   border-radius: 6px;
   font-weight: 600;
@@ -93,8 +93,8 @@
 }
 
 .nav-cta-button:hover {
-  background-color: #9BCB7A;
-  color: var(--text-dark);
+  background-color: var(--fern-green);
+  color: var(--parchment);
   transform: translateY(-1px);
 }
 

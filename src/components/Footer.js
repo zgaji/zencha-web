@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="footer-section brand-section">
             <h3 className="footer-title">ZENCHA</h3>
             <p className="footer-brand-line">Your local matcha slow bar — handcrafted drinks and premium powders.</p>
-            <p className="footer-tagline">Matcha is always a good drink.</p>
+            <p className="footer-tagline">Matcha? yes, please!</p>
           </div>
           
           <div className="footer-section contact-section">
