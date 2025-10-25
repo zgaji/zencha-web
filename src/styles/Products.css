@@ -1,12 +1,12 @@
 /* Products Page Styles */
 .products {
   min-height: 100vh;
-  background-color: var(--white);
+  background: var(--white);
 }
 
 /* Page Header */
 .products-header {
-  background: linear-gradient(135deg, var(--soft-green) 0%, #f0f8f0 100%);
+  background: var(--white);
   padding: 6rem 0 4rem;
   text-align: center;
 }
@@ -28,7 +28,7 @@
 /* Category Filter */
 .category-filter {
   padding: 2rem 0;
-  background-color: var(--light-gray);
+  background: var(--white);
 }
 
 .filter-buttons {
@@ -77,7 +77,7 @@
 /* Product Info Section */
 .product-info {
   padding: 4rem 0;
-  background-color: var(--light-gray);
+  background: var(--white);
 }
 
 .info-grid {
@@ -87,23 +87,32 @@
 }
 
 .info-card {
-  background-color: var(--white);
+  background: transparent;
   padding: 2rem;
-  border-radius: var(--border-radius);
   text-align: center;
-  box-shadow: var(--shadow);
   transition: var(--transition);
 }
 
 .info-card:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
 }
 
-.info-card h3 {
-  color: var(--primary-green);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+.info-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--white);
+}
+
+.info-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
 
 .info-card p {

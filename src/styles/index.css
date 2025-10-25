@@ -24,11 +24,11 @@ body {
 /* CSS Variables for consistent theming */
 :root {
   /* Primary Colors */
-  --primary-green: #2d5016;
-  --light-green: #4a7c59;
-  --accent-green: #6b8e23;
+  --primary-green: #1E713E;
+  --light-green: #a8d88d;
+  --accent-green: #1E713E;
   --soft-green: #e8f5e8;
-  --matcha-green: #A8D88D;
+  --matcha-green: #1E713E;
   --pistachio: #9BCB7A;
   
   /* Neutral Colors */
@@ -43,13 +43,13 @@ body {
   
   /* UI Colors */
   --border-color: #e9ecef;
-  --border-light: #4a7c59;
+  --border-light: #1E713E;
   --background-light: #fafbfc;
   
   /* Shadows */
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
-  --shadow-soft: 0 4px 15px rgba(45, 80, 22, 0.1);
+  --shadow-soft: 0 4px 15px rgba(30, 113, 62, 0.1);
   
   /* Border Radius */
   --border-radius: 8px;
@@ -145,7 +145,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  background-color: var(--primary-green);
+  background: var(--primary-green);
   color: var(--white);
   box-shadow: var(--shadow);
   min-height: 44px;
@@ -153,7 +153,7 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: var(--light-green);
+  background: var(--light-green);
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   color: var(--white);
@@ -165,14 +165,14 @@ a:hover {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background: transparent;
   color: var(--primary-green);
   border: 2px solid var(--primary-green);
   box-shadow: none;
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-green);
+  background: var(--primary-green);
   color: var(--white);
   box-shadow: var(--shadow);
 }
