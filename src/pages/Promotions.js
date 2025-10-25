@@ -9,7 +9,11 @@ const Promotions = () => {
       description: "Enjoy 10% off your first drink at Zencha",
       code: "WELCOME10",
       validUntil: "Valid until December 31, 2024",
-      icon: "🎉"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      )
     },
     {
       title: "Loyalty Rewards",
@@ -17,7 +21,11 @@ const Promotions = () => {
       description: "Get a free drink on your 5th visit",
       code: "LOYALTY5",
       validUntil: "Ongoing program",
-      icon: "⭐"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      )
     },
     {
       title: "Matcha Monday",
@@ -25,7 +33,11 @@ const Promotions = () => {
       description: "Every Monday, enjoy 15% off all matcha drinks",
       code: "MONDAY15",
       validUntil: "Every Monday",
-      icon: "📅"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+        </svg>
+      )
     },
     {
       title: "Bulk Order Discount",
@@ -33,7 +45,11 @@ const Promotions = () => {
       description: "Order 5 or more drinks and save 20%",
       code: "BULK20",
       validUntil: "Always available",
-      icon: "📦"
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+      )
     }
   ];
 
@@ -127,7 +143,11 @@ const Promotions = () => {
           <h2 className="section-title">Special Events</h2>
           <div className="events-grid">
             <div className="event-card">
-              <div className="event-icon">🎊</div>
+              <div className="event-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
               <h3>Matcha Tasting Sessions</h3>
               <p>
                 Join us every Saturday for guided matcha tasting sessions 
@@ -136,7 +156,11 @@ const Promotions = () => {
               <span className="event-time">Every Saturday, 2:00 PM</span>
             </div>
             <div className="event-card">
-              <div className="event-icon">🎓</div>
+              <div className="event-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
               <h3>Tea Ceremony Workshops</h3>
               <p>
                 Learn the traditional Japanese tea ceremony with our expert instructors. 
@@ -145,7 +169,11 @@ const Promotions = () => {
               <span className="event-time">First Sunday of each month</span>
             </div>
             <div className="event-card">
-              <div className="event-icon">🎂</div>
+              <div className="event-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
               <h3>Birthday Special</h3>
               <p>
                 Celebrate your birthday with us! Show your ID and get 25% off 

@@ -74,6 +74,21 @@
   align-items: center;
 }
 
+.story-img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.story-img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
 .image-placeholder {
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
   color: var(--white);
@@ -86,9 +101,21 @@
 }
 
 .placeholder-icon {
-  font-size: 3.5rem;
-  display: block;
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.placeholder-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
 }
 
 .image-placeholder p {
@@ -132,9 +159,21 @@
 }
 
 .benefit-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft-green);
+  border-radius: 50%;
+  color: var(--primary-green);
+}
+
+.benefit-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
 
 .benefit-card h3 {
@@ -178,6 +217,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mission-img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.mission-img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
 }
 
 /* Values Section */
@@ -269,7 +323,13 @@
   }
   
   .placeholder-icon {
-    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .placeholder-icon svg {
+    width: 30px;
+    height: 30px;
   }
   
   .benefits-section h2,
@@ -289,7 +349,13 @@
   }
   
   .benefit-icon {
-    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .benefit-icon svg {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -316,7 +382,13 @@
   }
   
   .placeholder-icon {
-    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .placeholder-icon svg {
+    width: 25px;
+    height: 25px;
   }
   
   .tagline {
@@ -338,7 +410,13 @@
   }
   
   .benefit-icon {
-    font-size: 2.5rem;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .benefit-icon svg {
+    width: 22px;
+    height: 22px;
   }
 }
 

@@ -42,34 +42,40 @@ const Contact = () => {
             <div className="info-cards">
               <div className="info-card">
                 <div className="info-icon">
-                  <img src="/assets/images/icons/email-icon.svg" alt="Email" />
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
                 </div>
                 <div className="info-content">
                   <h3>Email</h3>
-                  <p>zencha@gmail.com</p>
+                  <p>hello@zencha.ph</p>
                   <span>We'll respond within 24 hours</span>
                 </div>
               </div>
               
               <div className="info-card">
                 <div className="info-icon">
-                  <img src="/assets/images/icons/location-icon.svg" alt="Location" />
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
                 </div>
                 <div className="info-content">
                   <h3>Location</h3>
-                  <p>Manila, Philippines</p>
+                  <p>BGC Central Market, Manila</p>
                   <span>Visit us for the full experience</span>
                 </div>
               </div>
               
               <div className="info-card">
                 <div className="info-icon">
-                  <img src="/assets/images/icons/clock-icon.svg" alt="Hours" />
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                  </svg>
                 </div>
                 <div className="info-content">
                   <h3>Hours</h3>
-                  <p>Mon - Sun: 7:00 AM - 9:00 PM</p>
-                  <span>Open every day</span>
+                  <p>Weekends: 8AM - 6PM</p>
+                  <span>Perfect weekend vibes</span>
                 </div>
               </div>
             </div>
@@ -78,8 +84,12 @@ const Contact = () => {
             <div className="map-section">
               <h3>Find Us</h3>
               <div className="map-placeholder">
-                <img src="/assets/images/icons/map-icon.svg" alt="Map" className="map-icon" />
-                <p>Interactive map would be here</p>
+                <div className="map-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <p>BGC Central Market</p>
                 <span className="map-address">Manila, Philippines</span>
               </div>
             </div>

@@ -55,6 +55,63 @@ const ProductDetail = () => {
       }
     },
     {
+      id: 'kinako-matcha-latte',
+      name: "Kinako Matcha Latte",
+      price: 230,
+      description: "Stone ground matcha with kinako powder and oat milk. A unique blend offering a nutty, roasted flavor profile that complements the matcha beautifully.",
+      category: "drinks",
+      image: "/assets/images/products/matcha-latter.jpg",
+      ingredients: ["Ceremonial Grade Matcha", "Kinako Powder", "Oat Milk", "Ice"],
+      nutrition: {
+        calories: 130,
+        caffeine: "70mg",
+        sugar: "6g"
+      },
+      sizes: {
+        'Small': { label: 'Small (12oz)', price: 184 },
+        'Regular': { label: 'Regular (16oz)', price: 230 },
+        'Large': { label: 'Large (20oz)', price: 299 }
+      }
+    },
+    {
+      id: 'yuzu-matcha-cooler',
+      name: "Yuzu Matcha Cooler",
+      price: 200,
+      description: "Sparkling matcha with citrusy yuzu. A vibrant and refreshing cooler, perfect for a hot day, offering a zesty twist to traditional matcha.",
+      category: "drinks",
+      image: "/assets/images/products/cc-matcha.jpg",
+      ingredients: ["Ceremonial Grade Matcha", "Yuzu Juice", "Sparkling Water", "Ice"],
+      nutrition: {
+        calories: 80,
+        caffeine: "60mg",
+        sugar: "10g"
+      },
+      sizes: {
+        'Small': { label: 'Small (12oz)', price: 160 },
+        'Regular': { label: 'Regular (16oz)', price: 200 },
+        'Large': { label: 'Large (20oz)', price: 260 }
+      }
+    },
+    {
+      id: 'iced-vanilla-matcha',
+      name: "Iced Vanilla Matcha",
+      price: 200,
+      description: "Cold-brewed matcha with a hint of vanilla and light sweetness. A smooth and mellow matcha experience, subtly enhanced with vanilla.",
+      category: "drinks",
+      image: "/assets/images/products/matcha-latter.jpg",
+      ingredients: ["Ceremonial Grade Matcha", "Water", "Vanilla Extract", "Ice"],
+      nutrition: {
+        calories: 90,
+        caffeine: "65mg",
+        sugar: "7g"
+      },
+      sizes: {
+        'Small': { label: 'Small (12oz)', price: 160 },
+        'Regular': { label: 'Regular (16oz)', price: 200 },
+        'Large': { label: 'Large (20oz)', price: 260 }
+      }
+    },
+    {
       id: 'coconut-cloud-matcha',
       name: "Coconut Cloud Matcha",
       price: 230,
@@ -76,7 +133,7 @@ const ProductDetail = () => {
     
     // Matcha Powders
     {
-      id: 'ceremonial-grade-matcha',
+      id: 'ceremonial-grade-matcha-30g',
       name: "Ceremonial Grade Matcha",
       price: 450,
       description: "Premium ceremonial grade matcha powder in an elegant tin. Perfect for traditional preparation, this high-quality matcha offers a smooth, umami-rich flavor that's perfect for both drinking and cooking.",
@@ -95,7 +152,7 @@ const ProductDetail = () => {
       }
     },
     {
-      id: 'premium-matcha',
+      id: 'premium-matcha-50g',
       name: "Premium Matcha",
       price: 650,
       description: "High-quality matcha powder suitable for both drinking and cooking. This versatile matcha offers excellent flavor and can be used in lattes, smoothies, baking, and traditional tea preparation.",
@@ -114,7 +171,7 @@ const ProductDetail = () => {
       }
     },
     {
-      id: 'culinary-grade-matcha',
+      id: 'culinary-grade-matcha-100g',
       name: "Culinary Grade Matcha",
       price: 800,
       description: "Perfect for baking, smoothies, and cooking. Great value for regular use, this culinary grade matcha provides excellent flavor and color for all your culinary creations.",
@@ -162,7 +219,7 @@ const ProductDetail = () => {
       }
     }
     setLoading(false);
-  }, [id]);
+  }, [id, products]);
 
   const handleSizeSelect = (size) => {
     setSelectedSize(size);
@@ -186,17 +243,6 @@ const ProductDetail = () => {
     addToCart(productData, selectedSize, quantity);
   };
 
-  const handleBuyNow = () => {
-    const currentPrice = product.sizes ? product.sizes[selectedSize]?.price : product.price;
-    console.log('Buy now:', {
-      product: product.name,
-      size: selectedSize,
-      quantity: quantity,
-      price: currentPrice,
-      total: currentPrice * quantity
-    });
-    // In real app, this would redirect to checkout
-  };
 
   if (loading) {
     return (
@@ -220,7 +266,6 @@ const ProductDetail = () => {
   }
 
   const currentPrice = product.sizes ? product.sizes[selectedSize]?.price : product.price;
-  const totalPrice = currentPrice * quantity;
 
   return (
     <div className="product-detail">

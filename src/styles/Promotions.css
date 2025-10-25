@@ -67,9 +67,21 @@
 }
 
 .promo-icon {
-  font-size: 2.5rem;
+  width: 50px;
+  height: 50px;
   margin-bottom: 0.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft-green);
+  border-radius: 50%;
+  color: var(--primary-green);
+}
+
+.promo-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
 }
 
 .promo-discount {
@@ -267,9 +279,21 @@
 }
 
 .event-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft-green);
+  border-radius: 50%;
+  color: var(--primary-green);
+}
+
+.event-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
 
 .event-card h3 {
@@ -420,7 +444,13 @@
   }
   
   .event-icon {
-    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .event-icon svg {
+    width: 25px;
+    height: 25px;
   }
   
   .terms-list {
